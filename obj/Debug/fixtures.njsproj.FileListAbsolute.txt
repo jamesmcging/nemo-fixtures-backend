@@ -1,0 +1,3 @@
+C:\Users\jamie\source\repos\fixtures\fixtures\obj\Debug\fixtures.njsprojAssemblyReference.cache
+C:\Users\jamie\source\repos\fixtures\fixtures\obj\Debug\fixtures.njsproj.CoreCompileInputs.cache
+C:\Users\jamie\source\repos\fixtures\fixtures\bin\Microsoft.NodejsTools.WebRole.dll
