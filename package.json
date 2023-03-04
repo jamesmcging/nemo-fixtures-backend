@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon app"
+    "start": "cross-env NODE_ENV=prod node app",
+    "dev": "cross-env NODE_ENV=dev nodemon app"
   },
   "description": "fixtures",
   "author": {
@@ -15,6 +16,8 @@
     "body-parser": "^1.15.0",
     "cookie-parser": "^1.4.0",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
     "express": "^4.14.0",
     "express-session": "^1.17.3",
     "morgan": "^1.7.0",

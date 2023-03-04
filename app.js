@@ -1,11 +1,9 @@
 'use strict';
+const dotenv = require('dotenv');
 const express = require('express');
 const passport = require('passport');
-// var path = require('path');
-// var app = express();
-// const cors = require('cors');
-// app.use(cors());
 
+dotenv.config();
 var app = express();
 app.use(require('cors')());
 app.use(require('serve-static')(__dirname + '/../../public'));
@@ -16,23 +14,6 @@ app.use(require('express-session')({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
-
-// var logger = require('morgan');
-// app.use(logger('dev'));
-
-// var bodyParser = require('body-parser');
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: false }));
-
-// var cookieParser = require('cookie-parser');
-// app.use(cookieParser());
-
-// app.use(express.static(path.join(__dirname, 'public')));
-
-// const session = require('express-session');
-// app.use(session({
-
-// }));
 
 // DB & models
 const db = require('./models');
