@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=production node app",
-    "dev": "cross-env NODE_ENV=development nodemon app"
+    "start": "cross-env NODE_ENV=prod node app",
+    "dev": "cross-env NODE_ENV=dev nodemon app"
   },
   "description": "fixtures",
   "author": {

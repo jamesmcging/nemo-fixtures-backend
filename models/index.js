@@ -3,7 +3,16 @@ const path = require('path');
 const basename = path.basename(__filename);
 
 const Sequelize = require('sequelize');
-let sequelize = new Sequelize(process.env.DB_CONNECTION_STRING, {dialect: 'mysql'});
+let sequelize = new Sequelize(
+    process.env.RDS_DB_NAME,
+    process.env.RDS_USERNAME,
+    process.env.RDS_PASSWORD,
+    {
+        host: process.env.RDS_HOSTNAME,
+        port: process.env.RDS_PORT,
+        dialect: 'mysql'
+    }
+);
 
 const db = {};
 db.sequelize = sequelize;
